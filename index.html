@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Guess_me_game (Loops)-v2</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+
+<script src="js/script.js"></script>
+
+
+</head>
+
+<body onload="deactivate()">
+
+  <img id="gameLogo" src="images/game_logo.png">
+
+  <div id="score">
+    <p>There is something cool waiting... behind one of these buttons...
+    You have to guess which one! you have total 3 guesses. Good luck!</p>
+  </div>
+  
+  <div id="main">
+
+    <script>
+
+      var i = 1;
+      do{
+
+        document.write("<button id ='btn"+i+"' onclick='show(this)'>0</button>")
+        i++;
+
+      }while(i<6)
+
+    </script>
+
+    <div id="ctrlButtonDiv">
+      <button class="otherBtn" id="activateBtn" onclick="activate()">Activate</button>
+      <button class="otherBtn" id="deactivateBtn" onclick="deactivate()">Deactivate</button>
+    </div>
+
+  </div> <!-- End of Main -->
+
+</body>
+</html>
